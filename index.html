@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monopoly Game</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="game-container">
+      <div class="board-container">
+        <div class="board" id="board"></div>
+      </div>
+
+      <div class="game-panel">
+        <h2 style="margin-bottom: 30px;">Monopoly Game</h2>
+
+        <div id="players-info"></div>
+
+      </div>
+      <div class="game-panel">
+        <div class="dice-container">
+          <div class="dice" id="dice1">🎲</div>
+          <div class="dice" id="dice2">🎲</div>
+        </div>
+
+        <div class="controls">
+          <button class="btn btn-primary" id="rollDice">Roll Dice</button>
+          <button class="btn btn-success" id="buyProperty" disabled>Buy Property</button>
+          <button class="btn btn-danger" id="endTurn" disabled>End Turn</button>
+        </div>
+
+        <div class="message-log" id="messageLog"></div>
+      </div>
+      <!-- <div id="infoModal"
+        style="background:#fff;padding:32px 24px;border-radius:12px;min-width:320px;box-shadow:0 4px 32px #0006; text-align:center;">
+        <div id="infoModalText" style="margin:16px 0;font-size:1.2em;"></div>
+        <button id="closeInfoModalBtn" class="btn btn-primary">OK</button>
+      </div> -->
+    </div>
+
+
+    <div class="property-modal" id="propertyModal">
+      <div class="modal-content">
+        <h3 id="modalTitle">Property Details</h3>
+        <div id="modalContent"></div>
+        <div style="margin-top: 20px;">
+          <button class="btn btn-primary" id="buyBtn">Buy</button>
+          <button class="btn btn-danger" id="closeModal">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+
+</html>
