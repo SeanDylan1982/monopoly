@@ -356,6 +356,32 @@ body
   right: 5px;
 }
 
+.player.in-jail
+{
+  border: 3px solid #e74c3c;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.mortgaged
+{
+  position: absolute;
+  bottom: 2px;
+  left: 2px;
+  right: 2px;
+  background: #e74c3c;
+  color: white;
+  font-size: 8px;
+  padding: 1px;
+  border-radius: 2px;
+  text-align: center;
+}
+
 .game-panel
 {
   background: white;
